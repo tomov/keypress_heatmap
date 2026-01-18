@@ -2,9 +2,6 @@ import evdev
 from evdev import InputDevice, categorize, ecodes
 import datetime
 
-# sudo apt install evtest
-# sudo evtest
-# REPLACE THIS with the path found in step 1
 DEVICE_PATH = '/dev/input/event15' 
 LOG_FILE = 'physical_keys_log.txt'
 

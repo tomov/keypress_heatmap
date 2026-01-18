@@ -69,11 +69,12 @@ def generate_heatmap():
     ax = plt.gca()
     ax.invert_yaxis()
 
-    # Draw the background ASCII underlay first
+    # Draw the background ASCII underlay character by character for alignment
     for i, line in enumerate(lines):
-        # Using a monospaced font is critical for alignment
-        ax.text(0, i, line, family='monospace', color='#d3d3d3', 
-                va='center', ha='left', fontsize=10, zorder=1)
+        for j, char in enumerate(line):
+            if char.strip():  # Skip whitespace
+                ax.text(j, i, char, family='monospace', color='#d3d3d3',
+                        va='center', ha='center', fontsize=10, zorder=1)
 
     # Prepare scatter data
     plot_x, plot_y, plot_colors, plot_labels = [], [], [], []
