@@ -18,6 +18,16 @@ sudo apt install evtest python3-pip
 
 ### 2. Install Python dependencies
 
+**Option A: Using conda (recommended)**
+
+```bash
+conda create -n keylogger python=3.11
+conda activate keylogger
+pip install -r requirements.txt
+```
+
+**Option B: Using pip directly**
+
 ```bash
 pip install -r requirements.txt
 ```
