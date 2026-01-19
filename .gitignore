@@ -1,6 +1,5 @@
 .*
 *.png
 *.log
-*.txt
 !requirements.txt
 !.gitignore
