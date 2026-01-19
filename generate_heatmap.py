@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from collections import Counter
 
 # Configuration
-LOG_FILE = 'physical_keys_log.txt'
+LOG_FILE = 'physical_keys.log'
 LAYOUT_FILE = 'kinesis_layout.txt'
 
 # Comprehensive mapping for Dvorak layout on Kinesis Advantage2

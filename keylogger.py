@@ -3,7 +3,7 @@ from evdev import InputDevice, categorize, ecodes
 import datetime
 
 DEVICE_PATH = '/dev/input/event15' 
-LOG_FILE = 'physical_keys_log.txt'
+LOG_FILE = 'physical_keys.log'
 
 def log_keypresses():
     try:

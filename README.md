@@ -92,7 +92,7 @@ DEVICE_PATH = '/dev/input/event15'  # Replace with your device
 python3 keylogger.py
 ```
 
-Keypresses are logged to `physical_keys_log.txt` with timestamps.
+Keypresses are logged to `physical_keys.log` with timestamps.
 
 ### Generating the Heatmap
 
@@ -111,7 +111,7 @@ This creates `kinesis_heatmap.png` showing key usage frequency.
 | `keylogger.py` | Captures and logs keypresses from input device |
 | `generate_heatmap.py` | Creates heatmap visualization from log data |
 | `kinesis_layout.txt` | ASCII keyboard layout for heatmap positioning |
-| `physical_keys_log.txt` | Log file with timestamped keypresses |
+| `physical_keys.log` | Log file with timestamped keypresses |
 | `kinesis_heatmap.png` | Generated heatmap image |
 
 ## Customization
